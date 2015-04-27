@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Heading:</strong>
+  <%= @listing.heading %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @listing.body %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+
+<p>
+  <strong>External url:</strong>
+  <%= @listing.external_url %>
+</p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @listing.timestamp %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>
